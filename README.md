@@ -7,3 +7,8 @@ yarn
 @mui/material @emotoin/react @emotion/styled @mui/x-data-grid
 @nivo/core @nivo/pie @nivo/line @nivo/bar @nivo/geo
 `
+## sidebar 
+
+```
+https://www.npmjs.com/package/react-pro-sidebar/v/0.4.1
+```

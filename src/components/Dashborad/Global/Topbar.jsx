@@ -37,10 +37,10 @@ export const Topbar = () => {
     <NotificationImportantOutlinedIcon/>
     </IconButton>
     <IconButton>
-    <SettingsOutlinedIcon/>
+    <Person2OutlinedIcon/>
     </IconButton>
     <IconButton>
-    <Person2OutlinedIcon/>
+    <SettingsOutlinedIcon/>
     </IconButton>
     </Box>
     
