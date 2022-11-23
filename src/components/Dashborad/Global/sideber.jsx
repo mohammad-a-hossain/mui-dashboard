@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import {Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 //import 'react-pro-sidebar/dist/css/styles.css';
 //import "react-pro-sidebar/dist/css/styles.css";
 import { Link } from 'react-router-dom';
@@ -16,12 +16,14 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import { useTheme, Box, Typography, IconButton } from '@mui/material';
-import { tokens } from '../../../theam';
+import { tokens } from '../../../theme';
 import { useState } from 'react';
+import user from '../../../assets/user.png'
 
 
 
-const Item = ({ title, to, icon, selected, setSelected }) => {
+
+ const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
@@ -35,15 +37,16 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     >
       <Typography>{title}</Typography>
       <Link to={to} />
+    
     </MenuItem>
   );
-};
+}
 
  const Sideber = () => {
   const theme = useTheme()
   const colors= tokens(theme.palette.mode)
   const [isCollapsed,setIsCollapsed] = useState(false)
-  const [ selected, setSelected] = useState('Dashboard')
+  const [ selected, setSelected] = useState()
 
   return (
     <Box sx={{
@@ -57,18 +60,18 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
         padding: "5px 35px 5px 20px !important",
       },
       "& .sidebar-inner-item:hover": {
-        color: "#868dfb !important",
+        color: "#a7acf0 !important",
       },
       "& .sidebar-menu-item.active": {
-        color: "#6870fa !important",
+        color: "#a7acf0 !important",
       },
     }}>
     <Sidebar collapsed={isCollapsed}>
-      <Menu iconShape='square'>
+      <Menu>
         <MenuItem 
         onClick={()=>setIsCollapsed(!isCollapsed) }
         icon = {isCollapsed ? <MenuOutlinedIcon/>:undefined}
-        style={{margin:"10px 20px",
+        style={{margin:"10px 0 20px 0",
             color:colors.grey[100]}}
         >
         {
@@ -97,20 +100,20 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
                 alt="profile-user"
                 width="100px"
                 height="100px"
-                src={`../../../assets/user.png`}
+                src={user}
                 style={{ cursor: "pointer", borderRadius: "50%" }}
               />
             </Box>
             <Box textAlign="center">
               <Typography
-                variant="h2"
+                variant="h4"
                 color={colors.grey[100]}
-                fontWeight="bold"
+              
                 sx={{ m: "10px 0 0 0" }}
               >
                 sohel
               </Typography>
-              <Typography variant="h5" color={colors.greenAccent[500]}>
+              <Typography variant="h6" color={colors.greenAccent[500]}>
                 VP Fancy Admin
               </Typography>
             </Box>
@@ -128,12 +131,12 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 
         <Typography
           variant="h6"
-          color={colors.grey[300]}
+          color={colors.grey[100]}
           sx={{ m: "15px 0 5px 20px" }}
         >
           Data
         </Typography>
-        <Item
+        <Item 
           title="Manage Team"
           to="/team"
           icon={<PeopleOutlinedIcon />}

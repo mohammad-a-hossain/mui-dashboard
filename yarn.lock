@@ -206,7 +206,7 @@
     "@babel/plugin-syntax-jsx" "^7.18.6"
     "@babel/types" "^7.19.0"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.18.9", "@babel/runtime@^7.20.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
   version "7.20.1"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.1.tgz#1148bb33ab252b165a06698fde7576092a78b4a9"
   integrity sha512-mrzLkl6U9YLF8qpqI7TB82PESyEGjm/0Ly91jG575eVxMMlb8fYfOXFZIJ8XfLrJZQbm7dlKry2bJmXBUEkdFg==
@@ -548,6 +548,28 @@
     "@types/react-is" "^16.7.1 || ^17.0.0"
     prop-types "^15.8.1"
     react-is "^18.2.0"
+
+"@mui/utils@^5.10.3":
+  version "5.10.15"
+  resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.10.15.tgz#54fc1b373508d20dd5568070b2dcc0818e6bebba"
+  integrity sha512-6AW4MLBUijJi31hxx+6utTJM2q/4hbO+QiMdtwM+f4Iy+BfFnh/elhb08apxNYLfuugPnXXpkDmzEjg+8uDU9g==
+  dependencies:
+    "@babel/runtime" "^7.20.1"
+    "@types/prop-types" "^15.7.5"
+    "@types/react-is" "^16.7.1 || ^17.0.0"
+    prop-types "^15.8.1"
+    react-is "^18.2.0"
+
+"@mui/x-data-grid@^5.17.12":
+  version "5.17.12"
+  resolved "https://registry.yarnpkg.com/@mui/x-data-grid/-/x-data-grid-5.17.12.tgz#b57c32605f1964c2eb8b25136fe51d7165e22112"
+  integrity sha512-Q7lFxapa9oc8j3LVm3JAS+jmJftcaSLYcvhApYLKYWej9LKMQYov8hUPdIjzSta3E0WTINfiHaTcO1b6W4UMvQ==
+  dependencies:
+    "@babel/runtime" "^7.18.9"
+    "@mui/utils" "^5.10.3"
+    clsx "^1.2.1"
+    prop-types "^15.8.1"
+    reselect "^4.1.6"
 
 "@nivo/annotations@0.80.0":
   version "0.80.0"
@@ -1475,6 +1497,11 @@ regenerator-runtime@^0.13.10:
   version "0.13.11"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
   integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
+
+reselect@^4.1.6:
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.1.7.tgz#56480d9ff3d3188970ee2b76527bd94a95567a42"
+  integrity sha512-Zu1xbUt3/OPwsXL46hvOOoQrap2azE7ZQbokq61BQfiXvhewsKDwhMeZjTX9sX0nvw1t/U5Audyn1I9P/m9z0A==
 
 resolve-from@^4.0.0:
   version "4.0.0"
