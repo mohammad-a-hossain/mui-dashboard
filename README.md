@@ -12,3 +12,10 @@ yarn
 ```
 https://www.npmjs.com/package/react-pro-sidebar/v/0.4.1
 ```
+
+### calender render error solve
+
+```
+https://github.com/fullcalendar/fullcalendar-react/issues/150
+```
+to paste '@fullcalendar/react/dist/vdom' at calender compo

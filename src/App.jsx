@@ -15,13 +15,16 @@ import{ Team }from './components/Dashborad/Team'
 import Contacts from "./components/Dashborad/Contacts";
 
 import Invoices from './components/Dashborad/Invoice';
-/* 
+
 import Form from './components/Dashborad/Form'
+import Calendar from "./components/Dashborad/Calendar";
+import  Faq  from "./components/Dashborad/Faq";
+/* 
 import Bar from './components/Dashborad/Bar'
 import Line from './components/Dashborad/Line'
-import  Faq  from "./components/Dashborad/Faq";
+
 import Geography  from "./components/Dashborad/Geography";
-import Calendar from "./components/Dashborad/Calendar";
+
 import Pie from "./components/Dashborad/Pie"; */
 
 
@@ -47,14 +50,17 @@ const [isSidebar, setIsSidebar] =useState(true)
       <Route path='/contacts' element={<Contacts/>}/> 
       
       <Route path='/invoices' element={<Invoices/>}/> 
-      {/*
-      <Route path='/form' element={<Form/>}/>
+  
+      <Route path='/form' element={<Form/>}/> 
+      <Route path='/calender' element={<Calendar/>}/> 
+      <Route path='/faq' element={<Faq/>}/>
+         {/*
       <Route path='/pie' element={<Pie/>}/>
       <Route path='/bar' element={<Bar/>}/>
       <Route path='/line' element={<Line/>}/>
-      <Route path='/faq' element={<Faq/>}/>
+      
       <Route path='/geography' element={<Geography/>}/>
-      <Route path='/calender' element={<Calendar/>}/> */}
+      */}
       </Routes> 
       </main>
     </div>   
