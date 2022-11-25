@@ -1,7 +1,17 @@
+import { Box } from '@mui/material'
 import React from 'react'
+import { Header } from '../Header'
+import  {PieChart}  from '../PieChart'
 
-export const Pie = () => {
+ const Pie = () => {
   return (
-    <div>Pie</div>
+     <Box m='20px'>
+     <Header title='Pie Chart' subtitle='modt interactive pie chart'/>
+     <Box height='75vh'>
+     <PieChart/>
+     </Box>
+     
+     </Box>
   )
 }
+export default Pie

@@ -19,13 +19,14 @@ import Invoices from './components/Dashborad/Invoice';
 import Form from './components/Dashborad/Form'
 import Calendar from "./components/Dashborad/Calendar";
 import  Faq  from "./components/Dashborad/Faq";
-/* 
+
 import Bar from './components/Dashborad/Bar'
+import Pie from "./components/Dashborad/Pie";
+
 import Line from './components/Dashborad/Line'
-
-import Geography  from "./components/Dashborad/Geography";
-
-import Pie from "./components/Dashborad/Pie"; */
+ 
+import Geography  from "./components/Dashborad/Geography"
+ 
 
 
 
@@ -53,14 +54,15 @@ const [isSidebar, setIsSidebar] =useState(true)
   
       <Route path='/form' element={<Form/>}/> 
       <Route path='/calender' element={<Calendar/>}/> 
-      <Route path='/faq' element={<Faq/>}/>
-         {/*
+      <Route path='/faq' element={<Faq/>}/>  
+        <Route path='/bar' element={<Bar/>}/>
+        
       <Route path='/pie' element={<Pie/>}/>
-      <Route path='/bar' element={<Bar/>}/>
+   
       <Route path='/line' element={<Line/>}/>
       
       <Route path='/geography' element={<Geography/>}/>
-      */}
+    
       </Routes> 
       </main>
     </div>   
