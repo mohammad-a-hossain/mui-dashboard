@@ -1,4 +1,4 @@
-# mui-dashboard
+# mui-dashboard for practising frontend purpose
 command line- `
 yarn create vite //vite command
 yarn
